@@ -23,8 +23,12 @@ class siswaEskulSeeder extends Seeder
             ['id' => 'SE005', 'siswa_id' => 'S005', 'eskul_id' => 'E001', 'tanggal_daftar' => '2022-05-01', 'status' => 'Tidak Aktif'],
             ['id' => 'SE006', 'siswa_id' => 'S006', 'eskul_id' => 'E002', 'tanggal_daftar' => '2022-06-01', 'status' => 'Menunggu Konfirmasi'],
             ['id' => 'SE007', 'siswa_id' => 'S007', 'eskul_id' => 'E003', 'tanggal_daftar' => '2022-07-01', 'status' => 'Tidak Aktif'],
+        
+           
+            ['id' => 'SE008', 'siswa_id' => 'S005', 'eskul_id' => 'E002', 'tanggal_daftar' => '2022-08-01', 'status' => 'Aktif'],
+            ['id' => 'SE009', 'siswa_id' => 'S006', 'eskul_id' => 'E004', 'tanggal_daftar' => '2022-09-01', 'status' => 'Aktif'],
+            ['id' => 'SE010', 'siswa_id' => 'S007', 'eskul_id' => 'E001', 'tanggal_daftar' => '2022-10-01', 'status' => 'Aktif']
         ];
-
         foreach ($siswaEskuls as $siswaEskul) {
             siswa_eskul::create($siswaEskul);
         }
